@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+
+.link:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #00b4d8;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition-duration: .5s;
+  will-change: width;
+}
+
+.link:hover:after {
+  width: 100%;
+  right: 0;
+  transform: scale(1);
+}
+
+.link:hover {
+  transform: scale(1);
+  color: #00b4d8;
+}
+
+/* imagen de inicio foto  */
+.card {
+  max-width: 400px;
+  /* Establece el ancho máximo deseado */
+  margin: auto;
+}
+
+.media {
+  position: relative;
+  padding-top: 75%;
+  /* Establece la proporción de aspecto deseada (ejemplo: 4:3) */
+}
+
+
+/* animaciones  */
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.example-exit {
+  opacity: 1;
+}
+.example-exit.example-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
