@@ -14,6 +14,7 @@ import Napbar from './components/Napbar';
 import Proyects from './components/Proyects';
 import Inicio from './components/Inicio';
 import AboutMe from './components/AboutMe';
+import ContactForm from './components/ContactForm';
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -52,6 +53,7 @@ function App() {
           <Route path='/' element={<Inicio themeGlobal={themeGlobal} />} />
           <Route path='/aboutme' element={<AboutMe themeGlobal={themeGlobal} />} />
           <Route path='/proyects' element={<Proyects themeGlobal={themeGlobal} />} />
+          <Route path='/contact' element={<ContactForm themeGlobal={themeGlobal} />} />
         </Routes>
       </HashRouter>
     </>

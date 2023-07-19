@@ -1,12 +1,18 @@
-import { Box, Card, CardMedia, Collapse, Container, Grid, InputLabel, Stack, ThemeProvider, Typography } from '@mui/material';
+import { Box, Button, Card, CardMedia, Collapse, Container, Grid, InputLabel, Link, Stack, ThemeProvider, Typography } from '@mui/material';
 import Footer from './Footer';
 
-
-import { Fade } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
+
+import { Document, Page } from 'react-pdf';
+import { saveAs } from 'file-saver';
 
 
 const Inicio = ({ themeGlobal }) => {
+
+  const handleDownload = () => {
+    const pdfBlob = '/public/CV_Luis_Gómez.pdf' // Genera o obtén el blob del documento PDF
+    saveAs(pdfBlob, 'CV_Luis_Gómez.pdf');
+  };
 
 
 
@@ -33,30 +39,49 @@ const Inicio = ({ themeGlobal }) => {
                 GÓMEZ
               </Typography>
 
-              <Grid container spacing={2}>
+              <Grid container spacing={2} justify="center" alignItems="center">
                 <Grid item xs={12} sm={6} md={4}>
                   <Typography
 
                     color="text.primary"
                     variant="h5"
+
                   >
                     Soy desarrollador web y me encanta todo lo relacionado con las tecnologías.
                   </Typography>
+                  <Button onClick={handleDownload} variant="contained">Descargar CV</Button>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-                  <Card  sx={{ height: '581px', width: '429px' }}>
-                    <CardMedia
-                      component="img"
-                      image="/public/fotor-ai-2023071715528-removebg-preview.png"
-                      alt="Imagen"
-
+                  <Box>
+                    <Grid container spacing={2}>
+                      <Grid item xs={12} sm={6} md={4}>
+                        <Typography color="text.primary"
+                          variant="h3" textAlign={'center'}>
+                          <Link href='https://www.linkedin.com/in/luis-ad%C3%A1n-g%C3%B3mez-torres-8b9b7811b/' target="_blank">
+                            <i className='bx bxl-linkedin-square'></i>
+                          </Link>
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={12} sm={6} md={4}>
+                        <Typography color="text.primary"
+                          variant="h3" textAlign={'center'}>
+                          <Link href='https://github.com/luis1290' target="_blank">
+                            <i className='bx bxl-github' ></i>
+                          </Link>
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Card sx={{ height: '581px', width: '429px' }}>
+                    <img
+                      src="/public/fotor-ai-2023071715528-removebg-preview.png"
+                      alt="Imagen Portafolio"
+                      className="responsiveImage"
                     />
                   </Card>
                 </Grid>
-
-                {/* <Grid item xs={12} sm={6} md={4}>
-                <img src="/public/fotor-ai-2023071715528-removebg-preview.png" alt="Imagen" />
-              </Grid> */}
               </Grid>
             </Container>
           </Box>

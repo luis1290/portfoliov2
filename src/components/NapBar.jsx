@@ -100,6 +100,13 @@ const Napbar = ({ themeGlobal, colorMode }) => {
                     </Link>
                   </Typography>
                 </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <Link onClick={() => handleClick('/contact')} color="inherit" underline="none">
+                      {' Contacto'}
+                    </Link>
+                  </Typography>
+                </MenuItem>
               </Menu>
             </Box>
             {/*Fin menu responsive */}

@@ -15,7 +15,7 @@ const AboutMe = ({ themeGlobal }) => {
               pb: 6,
             }}
           >
-            <Container sx={{ py: 8 }} maxWidth="sm">
+            <Container sx={{ py: 8 }} maxWidth="sm" >
               <Typography
                 component="h1"
                 variant="h2"
@@ -26,7 +26,7 @@ const AboutMe = ({ themeGlobal }) => {
                 Acerca De Mi
               </Typography>
 
-              <Grid container spacing={2}>
+              <Grid container spacing={2} >
                 <Box sx={{
                   pt: 8,
                   pb: 6,
@@ -44,15 +44,17 @@ const AboutMe = ({ themeGlobal }) => {
                   </Grid>
                 </Box>
                 <Box>
-                  <Grid container spacing={4}>
-                    <Grid item xs={12} sm={6} md={4}>
+                  <Grid container spacing={4}  >
+                    <Grid item xs={12} sm={6} md={4} >
                       <Card
                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                         elevation={4}
                       >
 
                         <CardMedia component="div">
-                          <Typography variant='h3' textAlign="center" color="text.primary">HTML5</Typography>
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-html5'></i>
+                          </Typography>
                         </CardMedia>
 
                         <CardContent sx={{ flexGrow: 1 }}>
@@ -69,7 +71,10 @@ const AboutMe = ({ themeGlobal }) => {
                         elevation={4}
                       >
                         <CardMedia component="div">
-                          <Typography variant='h3' textAlign="center" color="text.primary">CSS3</Typography>
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-css3'></i>
+                          </Typography>
+
                         </CardMedia>
 
                         <CardContent sx={{ flexGrow: 1 }}>
@@ -86,13 +91,117 @@ const AboutMe = ({ themeGlobal }) => {
                         elevation={4}
                       >
                         <CardMedia component="div">
-                          <Typography variant='h3' textAlign="center" color="text.primary">JS</Typography>
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-javascript'></i>
+                          </Typography>
                         </CardMedia>
-
                         <CardContent sx={{ flexGrow: 1 }}>
                           <Typography textAlign="center">
                             Conocimientos en el lenguaje JavaScript, utilizado para proporcionar movimiento e interacción en sitios
                             web.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                      <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        elevation={4}
+                      >
+                        <CardMedia component="div">
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-php'></i>
+                          </Typography>
+                        </CardMedia>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography textAlign="center">
+                            Conocimientos en PHP y habilidades en la creación y mantenimiento de aplicaciones web basadas en este
+                            lenguaje.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                      <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        elevation={4}
+                      >
+                        <CardMedia component="div">
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-git'></i>
+                          </Typography>
+                        </CardMedia>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography textAlign="center">
+                            Manejo de Git para gestionar versiones en el desarrollo web.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                      <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        elevation={4}
+                      >
+                        <CardMedia component="div">
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxs-data'></i>
+                          </Typography>
+                        </CardMedia>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography textAlign="center">
+                            Manejo los conceptos básicos de bases de datos con el gestor de bases de datos MySQL.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                      <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        elevation={4}
+                      >
+                        <CardMedia component="div">
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-react' ></i>
+                          </Typography>
+                        </CardMedia>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography textAlign="center">
+                            Manejo de librería de react.js para la parte de frontend de aplicaciones web
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                      <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        elevation={4}
+                      >
+                        <CardMedia component="div">
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-nodejs'></i>
+                          </Typography>
+                        </CardMedia>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography textAlign="center">
+                            Manejo de baken con Node.js y express para creación de APIs y todo lo relacionado con backend
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={6} md={4}>
+                      <Card
+                        sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        elevation={4}
+                      >
+                        <CardMedia component="div">
+                          <Typography variant='h3' textAlign="center" color="text.primary">
+                            <i className='bx bxl-redux' ></i>
+                          </Typography>
+                        </CardMedia>
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography textAlign="center">
+                            Manejo de Redux en react para manejar estados globales
                           </Typography>
                         </CardContent>
                       </Card>
@@ -103,9 +212,7 @@ const AboutMe = ({ themeGlobal }) => {
             </Container>
           </Box>
         </main>
-
         <Footer />
-
       </ThemeProvider>
     </Slide>
   );

@@ -48,20 +48,30 @@
 }
 
 
-/* animaciones  */
-
-.example-enter {
-  opacity: 0.01;
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
 }
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+ 
 }
-.example-exit {
-  opacity: 1;
+
+/* form contacto */
+
+.root {
+  margin: 1rem;
 }
-.example-exit.example-exit-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+
+.root .MuiTextField-root {
+  margin: 1rem;
+  width: 100%;
+}
+
+.button {
+  margin: 1rem;
 }
