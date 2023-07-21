@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid, InputLabel, ThemeProvider, Typography } from '@mui/material';
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid,  ThemeProvider, Typography } from '@mui/material';
 
 import { Slide } from "react-awesome-reveal";
 import Footer from './Footer';

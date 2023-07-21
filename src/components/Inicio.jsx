@@ -1,9 +1,7 @@
-import { Box, Button, Card, CardMedia, Collapse, Container, Grid, InputLabel, Link, Stack, ThemeProvider, Typography } from '@mui/material';
+import { Box, Button, Card, Container, Grid, Link, ThemeProvider, Typography } from '@mui/material';
 import Footer from './Footer';
 
 import { Slide } from "react-awesome-reveal";
-
-import { Document, Page } from 'react-pdf';
 import { saveAs } from 'file-saver';
 
 

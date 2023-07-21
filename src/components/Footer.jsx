@@ -1,5 +1,5 @@
-import { AppBar, Box, Container, Grid, InputLabel, Link, Stack, ThemeProvider, Toolbar, Typography } from '@mui/material';
-import { useState } from 'react';
+import { AppBar, Box, Grid, Link, Toolbar, Typography } from '@mui/material';
+
 
 const Footer = () => {
 
@@ -11,7 +11,7 @@ const Footer = () => {
           <Grid container sx={{ justifyContent: 'center' }} spacing={4} justify="center" alignItems="center">
             <Grid item xs={12} sm={6} md={4}>
               <Box sx={{ justifyContent: 'center' }}>
-                <Typography variant="h6" align="center" gutterBottom>
+                <Typography align="center" gutterBottom>
                   Redes sociales
                 </Typography>
                 <Grid container spacing={4} justify="center" alignItems="center">
@@ -35,8 +35,8 @@ const Footer = () => {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={12}>
-              <Typography 
-                 textAlign={'center'} gutterBottom>
+              <Typography
+                textAlign={'center'} gutterBottom>
                 &copy; 2023, Luis Adán Gómez Torres
               </Typography>
             </Grid>

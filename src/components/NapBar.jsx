@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import IconButton from '@mui/material/IconButton';
 import Box from '@mui/material/Box';
-import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import { AppBar, Avatar, Link, Menu, MenuItem, Toolbar, Tooltip, Typography } from '@mui/material';
+import { AppBar, Link, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router-dom';
 
@@ -38,9 +38,8 @@ const Napbar = ({ themeGlobal, colorMode }) => {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
 
-  const [showComponent, setShowComponent] = useState(false);
 
-  
+
 
 
   return (
@@ -149,6 +148,19 @@ const Napbar = ({ themeGlobal, colorMode }) => {
                 <Link onClick={() => handleClick('/proyects')} color="inherit" underline="none" >
                   <Typography textAlign="center" sx={{ my: 2, color: 'white', display: 'block' }} >
                     {'Proyectos'}
+                  </Typography>
+                </Link>
+              </Box>
+              <Box className='link' sx={{
+                marginRight: '10px',
+                '&:hover': {
+                  backgroundColor: 'inherit',
+                  opacity: [0.9, 0.8, 0.7],
+                },
+              }}>
+                <Link onClick={() => handleClick('/contact')} color="inherit" underline="none" >
+                  <Typography textAlign="center" sx={{ my: 2, color: 'white', display: 'block' }} >
+                    {'Contacto'}
                   </Typography>
                 </Link>
               </Box>
