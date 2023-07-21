@@ -8,7 +8,7 @@ import { saveAs } from 'file-saver';
 const Inicio = ({ themeGlobal }) => {
 
   const handleDownload = () => {
-    const pdfBlob = '/public/CV_Luis_Gómez.pdf' // Genera o obtén el blob del documento PDF
+    const pdfBlob = '/CV_Luis_Gómez.pdf' // Genera o obtén el blob del documento PDF
     saveAs(pdfBlob, 'CV_Luis_Gómez.pdf');
   };
 
