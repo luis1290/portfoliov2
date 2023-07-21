@@ -23,7 +23,7 @@ const AboutMe = ({ themeGlobal }) => {
                 color="text.primary"
                 gutterBottom
               >
-                Acerca De Mi
+                Acerca De Mí
               </Typography>
 
               <Grid container spacing={2} >

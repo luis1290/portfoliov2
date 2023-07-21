@@ -1,8 +1,8 @@
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid,  ThemeProvider, Typography } from '@mui/material';
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid, ThemeProvider, Typography } from '@mui/material';
 
 import { Slide } from "react-awesome-reveal";
 import Footer from './Footer';
- 
+
 const Proyects = ({ themeGlobal }) => {
 
   const handleOpenWebsite = (url) => {
@@ -29,7 +29,7 @@ const Proyects = ({ themeGlobal }) => {
               </Typography>
 
               <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                Algunos de mis proyctos echos con React.js
+                Algunos de mis proyectos hechos con React.js
               </Typography>
             </Container>
 
