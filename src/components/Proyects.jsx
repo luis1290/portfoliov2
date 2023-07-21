@@ -45,7 +45,7 @@ const Proyects = ({ themeGlobal }) => {
                         // 16:9
                         pt: '56.25%',
                       }}
-                      image="/public/E-commerce.jpg"
+                      image="/E-commerce.jpg"
                     />
 
                     <CardContent sx={{ flexGrow: 1 }}>
@@ -72,7 +72,7 @@ const Proyects = ({ themeGlobal }) => {
                         // 16:9
                         pt: '56.25%',
                       }}
-                      image="/public/66AM3SSB3ZGSJNU2TQAVJNHIWE.jpg"
+                      image="/66AM3SSB3ZGSJNU2TQAVJNHIWE.jpg"
                     />
 
                     <CardContent sx={{ flexGrow: 1 }}>
@@ -99,7 +99,7 @@ const Proyects = ({ themeGlobal }) => {
                         // 16:9
                         pt: '56.25%',
                       }}
-                      image="/public/rick-morty-critica.jpg"
+                      image="/rick-morty-critica.jpg"
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
                       <Typography gutterBottom variant="h5" component="h2">
@@ -125,7 +125,7 @@ const Proyects = ({ themeGlobal }) => {
                         // 16:9
                         pt: '56.25%',
                       }}
-                      image="/public/clima-1.jpg"
+                      image="/clima-1.jpg"
                     />
 
                     <CardContent sx={{ flexGrow: 1 }}>

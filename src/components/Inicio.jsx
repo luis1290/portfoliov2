@@ -74,7 +74,7 @@ const Inicio = ({ themeGlobal }) => {
                 <Grid item xs={12} sm={6} md={4}>
                   <Card sx={{ height: '581px', width: '429px' }}>
                     <img
-                      src="/public/fotor-ai-2023071715528-removebg-preview.png"
+                      src="/fotor-ai-2023071715528-removebg-preview.png"
                       alt="Imagen Portafolio"
                       className="responsiveImage"
                     />
