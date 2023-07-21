@@ -134,7 +134,7 @@ const Napbar = ({ themeGlobal, colorMode }) => {
               }}>
                 <Link onClick={() => handleClick('/aboutme')} underline="none" color="inherit">
                   <Typography textAlign="center" sx={{ my: 2, color: 'white', display: 'block' }} >
-                    {'Acerca De Mi'}
+                    {'Acerca De Mí'}
                   </Typography>
                 </Link>
               </Box>
