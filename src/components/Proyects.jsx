@@ -2,7 +2,7 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Container, Grid
 
 import { Slide } from "react-awesome-reveal";
 import Footer from './Footer';
-
+ 
 const Proyects = ({ themeGlobal }) => {
 
   const handleOpenWebsite = (url) => {
