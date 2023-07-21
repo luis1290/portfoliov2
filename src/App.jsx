@@ -10,11 +10,11 @@ import { AppBar, Link, Menu, MenuItem, Toolbar, Typography } from '@mui/material
 import MenuIcon from '@mui/icons-material/Menu';
 import { HashRouter, Route, Routes, useNavigate } from 'react-router-dom';
 
-import Napbar from './components/Napbar';
 import Proyects from './components/Proyects';
 import Inicio from './components/Inicio';
 import AboutMe from './components/AboutMe';
 import ContactForm from './components/ContactForm';
+import Napbar from './components/NapBar';
 
 function App() {
   const [mode, setMode] = useState('light');
