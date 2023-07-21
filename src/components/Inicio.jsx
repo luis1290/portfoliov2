@@ -25,7 +25,7 @@ const Inicio = ({ themeGlobal }) => {
               pb: 6,
             }}
           >
-            <Container maxWidth="sm">
+            <Container maxWidth="xl"  >
               <Typography
                 component="h1"
                 variant="h2"
@@ -72,7 +72,7 @@ const Inicio = ({ themeGlobal }) => {
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-                  <Card sx={{ height: '581px', width: '429px' }}>
+                  <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                     <img
                       src="/fotor-ai-2023071715528-removebg-preview.png"
                       alt="Imagen Portafolio"
