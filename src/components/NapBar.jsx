@@ -88,7 +88,7 @@ const Napbar = ({ themeGlobal, colorMode }) => {
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     <Link onClick={() => handleClick('/aboutme')} color="inherit" underline="none">
-                      {'Acerca de Mi'}
+                      {'Acerca De Mí'}
                     </Link>
                   </Typography>
                 </MenuItem>
