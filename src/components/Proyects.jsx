@@ -141,6 +141,35 @@ const Proyects = ({ themeGlobal }) => {
                       <Button onClick={() => handleOpenWebsite('https://github.com/luis1290/api-climate')} size="small">GitHub</Button>
                     </CardActions>
                   </Card>
+
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Card
+                    sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  >
+                    <CardMedia
+                      component="div"
+                      sx={{
+                        // 16:9
+                        pt: '56.25%',
+                      }}
+                      image="/galleta_fortuna.jpg"
+                    />
+
+                    <CardContent sx={{ flexGrow: 1 }}>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        Galleta de la Fortuna
+                      </Typography>
+                      <Typography>
+                        Pequeña aplicación de galleta de la fortuna.
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button onClick={() => handleOpenWebsite('https://galleta-fortuna.netlify.app/')} size="small">Demo</Button>
+                      <Button onClick={() => handleOpenWebsite('https://github.com/luis1290/fortune-cookies')} size="small">GitHub</Button>
+                    </CardActions>
+                  </Card>
+
                 </Grid>
               </Grid>
             </Container>
